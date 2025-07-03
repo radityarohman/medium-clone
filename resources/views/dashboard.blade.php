@@ -18,10 +18,8 @@
                     </ul>
                 </div>
             </div>
-        </div>
 
-        <div class="mx-auto sm:px-6 lg:px-8">
-            <div class="mt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 sm:px-6 lg:px-8">
+            <div class="mt-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mb-4">
                 @foreach ($posts as $post)
                     <div class=" bg-white border border-gray-200 rounded-lg shadow-sm">
                         <a href="#">
@@ -47,5 +45,6 @@
                     </div>
                 @endforeach
             </div>
+            {{ $posts->links('') }}
         </div>
 </x-app-layout>
